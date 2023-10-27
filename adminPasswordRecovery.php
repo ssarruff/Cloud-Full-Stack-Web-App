@@ -64,13 +64,13 @@ $errors = array(); // Used to initialize the variable $errors empty to later add
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com'; // SMTP service provider. In our case we are using Gmail.com.
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'smartlightdeveloper@gmail.com'; // Email created for the purpose of sending verification codes, two way authorization codes and receiving user messages from the "Contact_Us page.
-                    $mail->Password = 'ejmkckyxcvxxtizm'; // Secure password generated from the Smart City Lighting gmail account to avoid exposing the one created by developers.
+                    $mail->Username = ''; // Email created for the purpose of sending verification codes, two way authorization codes and receiving user messages from the "Contact_Us page.
+                    $mail->Password = ''; // Secure password generated from the Smart City Lighting gmail account to avoid exposing the one created by developers.
                     $mail->SMTPSecure = 'tls'; // Use for server config.
                     $mail->Port = 587; // This is the port number required for message purposes. Needs to be open to avoid errors.
         
                     // Smart City Lighting email details from the sender.
-                    $mail->setFrom('smartlightdeveloper@gmail.com', 'Smart Lighting Developers');
+                    $mail->setFrom('', '');
         
                     // Code used to set the user's email.
                     $mail->addAddress($email);
