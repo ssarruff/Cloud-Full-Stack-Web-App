@@ -34,11 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $mail->Host = 'smtp.gmail.com'; // To utilize the Gmail server as host.
     $mail->Port = 587; // Port for secure SMTP for Gmail.
     $mail->SMTPAuth = true; // To require authentication.
-    $mail->Username = 'smartlightingproject@gmail.com'; // Email created for the purpose of sending verification codes, two way authorization codes and receiving user messages from the "Contact_Us" page.
-    $mail->Password = 'swvjaqbpqzdulbqv'; // Secure password generated from the Smart City Lighting gmail account.
+    $mail->Username = ''; // Email created for the purpose of sending verification codes, two way authorization codes and receiving user messages from the "Contact_Us" page.
+    $mail->Password = ''; // Secure password generated from the Smart City Lighting gmail account.
 
     $mail->setFrom($email, $name); // The "from" where the message is sent. Sender's email.
-    $mail->addAddress('smartlightingproject@gmail.com'); // Admin's email address
+    $mail->addAddress(''); // Admin's email address
     $mail->Subject = 'New Message from Smart City Lighting Website'; // Is the subject of the sent email.
     $mail->Body = "Name: $name\n\nEmail: $email\n\nMessage: $message"; // It organizes the message in the email.
 
