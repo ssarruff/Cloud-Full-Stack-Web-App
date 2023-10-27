@@ -8,7 +8,7 @@ session_start();
 $servername = "localhost"; // Hostname phpMyAdmin (xampp).
 $username = "root"; // My database username.
 $password = ""; // My database password.
-$dbname = "ssarruff"; // My Database name.
+$dbname = ""; // My Database name.
 
 // Required to setup connection.
 $con = mysqli_connect($servername, $username, $password, $dbname);
