@@ -1,2 +1,2 @@
 # Web_App_Front-End
-This portfolio contains a Web App constructed for a AWS cloud Front end / Back end project.
+This portfolio contains a Web App constructed for an AWS Cloud Full stack project.
