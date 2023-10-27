@@ -1,9 +1,9 @@
 <?php
 // Database connection details
 $host = "localhost"; // hostname
-$username = "id20780885_root"; // MySQL username
-$password = "Capstone2@"; // MySQL password
-$dbname = "id20780885_smartcity"; // database name
+$username = "root"; // MySQL username
+$password = ""; // MySQL password
+$dbname = ""; // database name
 
 // Establishing database connection
 $conn = mysqli_connect($host, $username, $password, $dbname);
