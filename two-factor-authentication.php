@@ -44,13 +44,13 @@ if ($result->num_rows > 0) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com'; 
     $mail->SMTPAuth = true;
-    $mail->Username = 'smartlightingproject@gmail.com'; 
-    $mail->Password = 'swvjaqbpqzdulbqv'; 
+    $mail->Username = ''; 
+    $mail->Password = ''; 
     $mail->SMTPSecure = 'tls'; 
     $mail->Port = 587; 
 
     // Smart City Lighting email details from the sender.
-    $mail->setFrom('smartlightingproject@gmail.com', 'Smart City Authenticator');
+    $mail->setFrom('', '');
 
      // Code used to set the user's email.
     $mail->addAddress($email);
