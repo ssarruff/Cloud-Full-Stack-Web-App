@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: whitesmoke;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    color: black;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: darkgray;
+}
+
+    .topnav a {
+        float: none;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        .topnav a:hover {
+            background-color: White;
+            color: darkgray;
+        }
+
+
+.form-container .form-inner {
+    width: 100%;
+    overflow: hidden;
+}
