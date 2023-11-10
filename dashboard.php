@@ -28,7 +28,7 @@ if(!isset($_SESSION["username"])){
     </div>
             
             
-            <iframe title="Report Section" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiOThiM2Y3OGMtZjA2ZC00ZDViLTlmNDEtNDE1Nzg3YjA5OWQ1IiwidCI6IjRiMjU5Yjk4LTM5MzEtNGMwYS05ZGEwLTcwYzRlNGU1ZWI5YSIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe title="Report Section" width="1024" height="804" src="" frameborder="0" allowFullScreen="true"></iframe>
    
   
     <footer>
