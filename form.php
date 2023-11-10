@@ -31,7 +31,7 @@ if(!isset($_SESSION["username"])){
             <section id="about-us">
                 <h2>Welcome to Smart City</h2>
                 <h3>User survey</h3>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfatJ-FOnpjpVCN2rzMtr85UMlPGpIu52J38xi2Fg8Irc-VOw/viewform?embedded=true" width="640" height="1218" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="" width="640" height="1218" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               
             </section>
         </form>
