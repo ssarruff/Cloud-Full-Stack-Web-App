@@ -8,12 +8,23 @@ if (!isset($_SESSION["id"]) || !isset($_SESSION["username"]) || !isset($_SESSION
     exit();
 }
 
+// Check if the token has expired
+if (time() > $_SESSION["two_factor_expires"]) {
+    $message = "The verification code has expired. Please try again.";
+    unset($_SESSION["two_factor_code"]);
+    unset($_SESSION["two_factor_expires"]);
+    // Optionally, redirect them back to generate a new code
+    header("Location: request-new-code.php");
+    exit();
+}
+
 if (isset($_POST["submit"])) {
     $userCode = $_POST["code"];
 
     if ($userCode == $_SESSION["two_factor_code"]) {
         // Verification successful
         unset($_SESSION["two_factor_code"]); // Clear the code from the session
+        unset($_SESSION["two_factor_expires"]); // Clear expiration
         header("Location: about-us.php");
         exit();
     } else {
