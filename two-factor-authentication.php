@@ -57,6 +57,7 @@ if ($result->num_rows > 0) {
     // The generated code is stored in the session ($_SESSION["two_factor_code"]) for later verification.
     $code = mt_rand(100000, 999999);
     $_SESSION["two_factor_code"] = $code;
+    $_SESSION["two_factor_expires"] = time() + 300; // 5 minutes from now
 
     /*
     PHPMailer configuration to send email to the user logging in. PHPMailer is configured to send the OTP to the user's registered email address.
