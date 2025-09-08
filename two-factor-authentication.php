@@ -61,7 +61,7 @@ if ($result->num_rows > 0) {
 
     /*
     PHPMailer configuration to send email to the user logging in. PHPMailer is configured to send the OTP to the user's registered email address.
-    PHPMailer library will use TLS (Transport Layer Security) to encrypt the email communication between your web application and the email server (smtp.gmail.com). TLS ensures that the data transmitted, including the OTP sent to the user, is encrypted, making it secure from potential interception by malicious actors during transmission.
+    PHPMailer library will use TLS (Transport Layer Security) to encrypt the email communication between the web application and the email server (smtp.gmail.com). TLS ensures that the data transmitted, including the OTP sent to the user, is encrypted, making it secure from potential interception by malicious actors during transmission.
     Using TLS prevents attacks like Man-In-The-Middle (MITM), where an attacker could potentially intercept and read unencrypted data. By enabling TLS, you're adding an important layer of security to protect the sensitive OTP during the email process.
     */
     $mail = new PHPMailer(true);
@@ -106,3 +106,4 @@ $_SESSION["verification_message"] = $verificationMessage;
 header("Location: code-verification.php");
 exit();
 ?>
+
